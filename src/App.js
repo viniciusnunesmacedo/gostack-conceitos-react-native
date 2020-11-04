@@ -19,7 +19,7 @@ export default function App() {
     api.get('repositories').then(response => {
       setRepository(response.data);
     });
-  })
+  }, [])
 
   async function handleLikeRepository(id) {
     // Implement "Like Repository" functionality
