@@ -27,7 +27,7 @@ export default function App() {
     const repositoriesUpdated = repositories.map(repository => {
       return repository.id === id ? response.data : repository;
     });
-
+    console.log(repositoriesUpdated);
     setRepository(repositoriesUpdated);
   }
 
@@ -45,7 +45,7 @@ export default function App() {
 
               <View style={styles.techsContainer}>
                 <Text style={styles.tech}>
-                  ReactJS
+                  React Native
                 </Text>
                 <Text style={styles.tech}>
                   Node.js
